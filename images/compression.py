@@ -19,7 +19,7 @@ def compress_images(source=False, dest=False, quality=30):
                 os.chdir(source)
 
 if __name__ == "__main__":
-    source = "/mnt/c/Users/2020A00139/Pictures/beer_data_raw/train_images"
-    dest = "/mnt/c/Users/2020A00139/Pictures/beer_data/train_images"
+    source = "/mnt/c/Users/2020A00139/Pictures/beer_data_raw/valid_images"
+    dest = "/mnt/c/Users/2020A00139/Pictures/beer_data/valid_images"
     quality = 30
     compress_images(source, dest, quality)
