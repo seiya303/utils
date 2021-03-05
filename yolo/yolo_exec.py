@@ -28,10 +28,12 @@ with open("python/train_log.txt", "a+") as f:
                 print(output.rstrip())
             break
 
-end = datetime.now()
-end_date_time = end.strftime("%Y-%m-%d_%H:%M:%S")
+    end = datetime.now()
+    end_date_time = end.strftime("%Y-%m-%d_%H:%M:%S")
 
-duration = end - start
-duration = duration - timedelta(microseconds=duration.microseconds)
+    duration = end - start
+    duration = duration - timedelta(microseconds=duration.microseconds)
 
-print("start:", start_date_time + ",", "end:", end_date_time + ",", "duration:", duration)
+    result = "start: " + start_date_time + ", " + "end: " + end_date_time + ", " + "duration: " + str(duration)
+    print(result)
+    f.write(result)
